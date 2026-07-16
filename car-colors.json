@@ -1,0 +1,68 @@
+[
+	{
+		"id" : 0,
+		"gameColor" : 0,
+		"price" : 250,
+		"color" : "#000000"
+	},
+	{
+		"id" : 1,
+		"gameColor" : 1,
+		"price" : 250,
+		"color" : "#F5F5F5"
+	},
+	{
+		"id" : 2,
+		"gameColor" : 2,
+		"price" : 250,
+		"color" : "#2A77A1"
+	},
+	{
+		"id" : 3,
+		"gameColor" : 9,
+		"price" : 250,
+		"color" : "#5E7072"
+	},
+	{
+		"id" : 4,
+		"gameColor" : 10,
+		"price" : 250,
+		"color" : "#46597A" 
+	},
+	{
+		"id" : 5,
+		"gameColor" : 16,
+		"price" : 250,
+		"color" : "#335F3F"
+	},
+	{
+		"id" : 6,
+		"gameColor" : 17,
+		"price" : 250,
+		"color" : "#730E1A"
+	},
+	{
+		"id" : 7,
+		"gameColor" : 24,
+		"price" : 250,
+		"color" : "#515459"
+	},
+	{
+		"id" : 8,
+		"gameColor" : 25,
+		"price" : 250,
+		"color" : "#3F3E45"
+	},
+	{
+		"id" : 9,
+		"gameColor" : 99,
+		"price" : 250,
+		"color" : "#AE9B7F"
+	},
+	{
+		"id" : 10,
+		"gameColor" : 44,
+		"price" : 250,
+		"color" : "#193826"
+	}
+]
