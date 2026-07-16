@@ -1,0 +1,238 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+html {
+  /* Установка полноразмерного фонового изображения.
+   *
+   * Высота <html> никогда не меньше высоты экрана, поэтому этот элемент, в
+   * данном случае, подходит лучше, чем <body>.
+   */
+  background: url("../imgs/page_bg.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  /* Не надеемся на дефолтные настройки, удостоверяемся, что 1rem = 16px. */
+  font-size: 16px;
+}
+
+
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+}
+
+
+.page-content-wrapper {
+  width: 48.5rem;
+  box-sizing: border-box;
+  padding: 1rem 0;
+}
+
+
+/*
+ * ЗАГОЛОВКИ
+ */
+
+.page-heading,
+.pay-choice-heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.page-heading {
+  margin-bottom: 1.75rem;
+}
+
+.page-heading .account {
+  color: #E4360D;
+}
+
+
+/*
+ * ДЕТАЛИ ПЛАТЕЖА
+ */
+
+.payment-details {
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: 2.75rem;
+}
+
+
+.payment-detail-field {
+  flex: auto;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+
+  padding: 1.15rem;
+  margin-right: .8rem;
+
+  background-color: rgba(255, 255, 255, .1);
+  border-radius: .625rem;
+  font-size: 1.125rem;
+}
+.payment-detail-field:last-of-type {
+  margin-right: 0;
+}
+
+
+.payment-detail-field .value {
+  font-weight: 700;
+}
+
+
+.payment-detail-field.game-server {
+  flex: 1;
+}
+.payment-detail-field.game-server .value {
+  color: #007FFF;
+}
+
+
+.payment-detail-field.payment-amount {
+  flex: 1.2;
+}
+
+
+/*
+ * ФОРМА ВЫБОРА МЕТОДА ОПЛАТЫ
+ */
+
+.payment-methods {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 -.4rem;
+
+  list-style: none;
+  padding: 0;
+}
+
+
+.payment-method {
+  height: 6.25rem;
+  width: 20%;
+  padding: .4rem;
+}
+
+
+.choose-pay-btn {
+  background-color: rgba(255, 255, 255, .1);
+  border: 0;
+  border-radius: .625rem;
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+}
+.choose-pay-btn:hover {
+  background-color: rgba(255, 255, 255, .2);
+}
+
+
+/*
+ * Мобильная версия
+ */
+
+@media (max-width: 800px) {
+
+  .page-content-wrapper {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .page-heading {
+    display: none;
+  }
+
+  .payment-details {
+    display: none;
+  }
+
+}
+
+
+@media (max-width: 800px) {
+
+  .payment-method {
+    width: 25%;
+  }
+}
+
+@media (max-width: 580px) {
+
+  .payment-method {
+    width: 33.3%;
+  }
+}
+
+@media (max-width: 580px) {
+
+  .payment-method {
+    width: 50%;
+  }
+}
+
+ #fullpage-loading-overlay {
+   display: none;
+   position: fixed;
+   top: 0;
+   left: 0;
+
+   height: 100vh;
+   width: 100vw;
+
+   overflow: hidden;
+   background-color: rgba(0, 0, 0, .925);
+   margin: 0;
+ }
+
+ .loader-container {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
+   width: 100%;
+   overflow: hidden;
+
+ }
+
+ .loader-heading {
+   font-size: 2rem;
+   padding: 1rem;
+   text-align: center;
+ }
+
+.loader {
+  border: 12px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 12px solid #555;
+  width:  90px;
+  height: 90px;
+  -webkit-animation: spin 1.25s linear infinite; /* Safari */
+  animation: spin 1.25s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

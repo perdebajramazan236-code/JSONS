@@ -1,0 +1,44 @@
+{
+  "spawnLocation": [
+    {
+      "id": 0,
+      "place": 2,
+      "place_name": "Фракция\nby @ne_regerds\n@dev_bist"
+    },
+    {
+      "id": 1,
+      "place": 0,
+      "place_name": "Вокзал\nby @ne_regerds\n@dev_bist"
+    },
+    {
+      "id": 2,
+      "place": 1,
+      "place_name": "Последнее место\nby @ne_regerds\n@dev_bist"
+    },
+    {
+      "id": 3,
+      "place": 3,
+      "place_name": "Гараж\nby @ne_regerds\n@dev_bist"
+    },
+    {
+      "id": 4,
+      "place": 4,
+      "place_name": "Дом\nby @ne_regerds\n@dev_bist"
+    },
+    {
+      "id": 5,
+      "place": 6,
+      "place_name": "Семейный гараж\nby @ne_regerds\n@dev_bist"
+    },
+    {
+      "id": 6,
+      "place": 7,
+      "place_name": "Семейный дом\nby @ne_regerds\n@dev_bist"
+    },
+    {
+      "id": 7,
+      "place": 5,
+      "place_name": "Яхта\nby @ne_regerds\n@dev_bist"
+    }
+  ]
+}
